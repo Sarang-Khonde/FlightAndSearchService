@@ -11,8 +11,9 @@
     app.use(bodyParser.urlencoded({extended: true}));
 
     
-    app.listen(PORT,() =>{
-        console.log(`server started at ${PORT}`); 
+    app.listen(PORT,async () =>{
+        console.log(`server started at ${PORT}`);
+  
     }); 
  }
 
