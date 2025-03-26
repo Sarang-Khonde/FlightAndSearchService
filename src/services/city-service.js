@@ -37,6 +37,7 @@ const {CityRepository}  = require ('../repository/index');
     async getCity(cityId) {
         try {
             const city = await this.CityRepository.getCity(cityId);
+            return city;
         } catch (error) {
           console.log("something went wrong at service layer");
           throw { error };
