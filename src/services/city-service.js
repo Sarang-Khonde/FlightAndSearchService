@@ -10,7 +10,7 @@ const {CityRepository}  = require ('../repository/index');
         } catch(error){
             console.log("something went wrong at service layer");
             throw {error};
-        }
+        } 
     }
 
     async deleteCity(cityId) {
